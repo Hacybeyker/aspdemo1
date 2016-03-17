@@ -29,7 +29,7 @@ namespace WebApplication4.Controllers
             return View(modelo.ToList());
         }
 
-        public ActionResult ListadoUsurioDescirpcionCargo()
+        public ActionResult ListadoUsuarioDescirpcionCargo()
         {
             var modelo = from p in entidad.usuario join c in entidad.cargo on p.codigocargo equals c.codigocargo
                          select new ElUsuario

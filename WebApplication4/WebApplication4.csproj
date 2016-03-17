@@ -201,6 +201,7 @@
     <Compile Include="Controllers\CargoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MantenimientoCargosController.cs" />
     <Compile Include="Controllers\PersonaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -318,6 +319,12 @@
     <Content Include="Views\Cargo\Index.cshtml" />
     <Content Include="Views\Cargo\ListaMuestraCargo.cshtml" />
     <Content Include="Views\Cargo\UsuarioPorCargo.cshtml" />
+    <Content Include="Views\Cargo\ListadoUsuarioDescirpcionCargo.cshtml" />
+    <Content Include="Views\MantenimientoCargos\Create.cshtml" />
+    <Content Include="Views\MantenimientoCargos\Delete.cshtml" />
+    <Content Include="Views\MantenimientoCargos\Details.cshtml" />
+    <Content Include="Views\MantenimientoCargos\Edit.cshtml" />
+    <Content Include="Views\MantenimientoCargos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
