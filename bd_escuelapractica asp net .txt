@@ -1,0 +1,33 @@
+create database bd_escuela
+go
+
+use bd_escuela
+go
+
+create table cargo
+(
+ codigocargo int not null,
+ descripcioncargo varchar(50) not null,
+ constraint codigocargo_pk primary key (codigocargo)
+)
+go
+
+create table usuario
+(
+codigousuario int not null,
+nombreusuario varchar(50) not null,
+codigocargo int not null,
+constraint codigousuario_pk primary key (codigousuario),
+constraint codigocargousuario_fk foreign key (codigocargo) references cargo (codigocargo)
+)
+go
+
+
+insert into cargo values (1,'administrador'),(2,'auxiliar'),(3,'soporte')
+go
+insert into usuario values (1,'hacybeyker',1),(2,'sa',2),(3,'sistemas',3)
+go
+
+select * from cargo
+
+select * from usuario
